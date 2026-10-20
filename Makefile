@@ -1,7 +1,7 @@
 CC        := cc
 CFLAGS    := -std=c11 -Wall -Wextra -Wpedantic -g
 
-TARGET    := cursorgen
+TARGET    := main
 SRC_DIR   := src
 BUILD_DIR := build
 BIN_DIR   := bin
