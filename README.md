@@ -1,8 +1,8 @@
 # cursorgen
 
-Gerador simples de arquivos Xcursor em C.
+A simple Xcursor file generator in C.
 
-## Estrutura do Projeto
+## Project Structure
 
 ```text
 .
@@ -12,42 +12,42 @@ Gerador simples de arquivos Xcursor em C.
     └── main.c
 ```
 
-## Pré-requisitos
+## Prerequisites
 
-- Compilador C (`clang` ou `gcc`)
+- C compiler (`clang` or `gcc`)
 - `make`
 
-## Como Compilar e Executar
+## Building and Running
 
-### Compilar o projeto
+### Build the project
 
 ```bash
 make
 ```
 
-O binário será gerado em `bin/cursorgen`.
+The binary will be generated at `bin/cursorgen`.
 
-### Compilar e executar
+### Build and run
 
 ```bash
 make run
 ```
 
-Para passar argumentos de linha de comando ao executar via `make`:
+To pass command-line arguments when running via `make`:
 
 ```bash
 make run ARGS="arg1 arg2"
 ```
 
-Ou execute o binário diretamente:
+Or run the binary directly:
 
 ```bash
 ./bin/cursorgen
 ```
 
-### Limpar arquivos de build
+### Clean build artifacts
 
-Remove os diretórios `build/` e `bin/`:
+Removes the `build/` and `bin/` directories:
 
 ```bash
 make clean
