@@ -1,54 +1,71 @@
-# cursorgen
+# C Project Template
 
-A simple Xcursor file generator in C.
+A simple and lightweight boilerplate template for C projects using `make`.
 
 ## Project Structure
 
 ```text
 .
+├── .gitignore
 ├── Makefile
 ├── README.md
 └── src/
     └── main.c
 ```
 
+- **`src/`**: Place all your C source files (`.c`) here.
+- **`build/`**: Temporary object files (`.o`) generated during compilation (git-ignored).
+- **`bin/`**: Final compiled binary output (git-ignored).
+
 ## Prerequisites
 
-- C compiler (`clang` or `gcc`)
+- A C compiler (`clang` or `gcc`)
 - `make`
 
-## Building and Running
+## Getting Started
 
-### Build the project
+### Build
+
+Compile the project:
 
 ```bash
 make
 ```
 
-The binary will be generated at `bin/cursorgen`.
+The compiled binary will be placed in the `bin/` directory.
 
-### Build and run
+### Run
+
+Compile (if needed) and run the executable:
 
 ```bash
 make run
 ```
 
-To pass command-line arguments when running via `make`:
+Pass command-line arguments to your program:
 
 ```bash
 make run ARGS="arg1 arg2"
 ```
 
-Or run the binary directly:
+You can also run the binary directly:
 
 ```bash
-./bin/cursorgen
+./bin/$(TARGET)
 ```
 
-### Clean build artifacts
+### Clean
 
-Removes the `build/` and `bin/` directories:
+Remove all compilation artifacts (`build/` and `bin/`):
 
 ```bash
 make clean
 ```
+
+## Customization
+
+You can adjust build configurations directly in [Makefile](file:///Users/carlos/Documents/Projects/cursorgen/Makefile):
+
+- **`TARGET`**: Name of the generated binary output.
+- **`CC`**: Compiler (`cc`, `clang`, `gcc`, etc.).
+- **`CFLAGS`**: Compiler flags (optimization, warning levels, C standard version).
